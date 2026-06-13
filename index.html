@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aperture — Photography by Joel Niemelä</title>
+  <meta name="description" content="Aperture is the portfolio of Joel Niemelä, a photographer capturing landscapes, portraits, and quiet moments in natural light.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="index.html">Aper<span>ture</span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO: portfolio images crossfade in the background (CSS only) -->
+    <section class="hero">
+      <div class="hero__slides" aria-hidden="true">
+        <div style="background-image:url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1800&q=80')"></div>
+        <div style="background-image:url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1800&q=80')"></div>
+        <div style="background-image:url('https://images.unsplash.com/photo-1502899576159-f224dc2349fa?auto=format&fit=crop&w=1800&q=80')"></div>
+        <div style="background-image:url('https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?auto=format&fit=crop&w=1800&q=80')"></div>
+      </div>
+
+      <div class="hero__content">
+        <p class="eyebrow">Joel Niemelä · Photographer</p>
+        <h1>Light, held still.</h1>
+        <p class="hero__lead">
+          Landscapes, portraits, and fleeting moments — photographed in
+          natural light across mountains, cities, and the spaces in between.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--light" href="portfolio.html">View Portfolio</a>
+          <a class="btn btn--light" href="contact.html">Get in Touch</a>
+        </div>
+      </div>
+
+      <span class="scroll-cue">Scroll</span>
+    </section>
+
+    <!-- FEATURE STRIP -->
+    <section class="strip">
+      <div class="wrap">
+        <div class="strip__grid">
+          <div class="feature">
+            <span class="num">12+</span>
+            <h3>Years behind the lens</h3>
+            <p>A patient eye built over a decade of chasing the right light.</p>
+          </div>
+          <div class="feature">
+            <span class="num">40</span>
+            <h3>Countries photographed</h3>
+            <p>From Nordic coastlines to desert dusk, always travelling lightly.</p>
+          </div>
+          <div class="feature">
+            <span class="num">100%</span>
+            <h3>Natural light</h3>
+            <p>No flash, no fuss — just the world as it actually appears.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SPLIT -->
+    <section class="wrap split">
+      <div>
+        <p class="eyebrow">About the work</p>
+        <h2>Quiet frames from loud places.</h2>
+        <p>
+          I work slowly, on foot, mostly at the edges of the day. The aim is
+          never to dramatise a place but to notice it — the way fog settles in
+          a valley, how a stranger pauses at a crossing, the colour the sky
+          turns five minutes after everyone has stopped looking.
+        </p>
+        <p>
+          Every image here is available as a print, and I take on a small
+          number of commissions each year.
+        </p>
+        <a class="btn btn--dark mt-2" href="portfolio.html">Explore the gallery</a>
+      </div>
+      <img class="split__img"
+           src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1000&q=80"
+           alt="A portrait taken in soft afternoon light.">
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <a class="brand" href="index.html">Aper<span>ture</span></a>
+      <nav class="socials" aria-label="Social">
+        <a href="#">Instagram</a>
+        <a href="#">Behance</a>
+        <a href="mailto:joel@niemela.se">Email</a>
+      </nav>
+      <small>© 2026 Joel Niemelä. All rights reserved.</small>
+    </div>
+  </footer>
+
+</body>
+</html>
