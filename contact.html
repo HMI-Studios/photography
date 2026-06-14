@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="contactForm.js"></script>
 </head>
 <body>
 
@@ -34,8 +35,7 @@
     </section>
 
     <section class="wrap contact-grid">
-      <!-- The form posts nowhere by default; wire `action` to a handler when ready. -->
-      <form action="#" method="post" novalidate>
+      <form id="contact">
         <div class="field">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" autocomplete="name" required>
@@ -52,7 +52,7 @@
           <label for="message">Message</label>
           <textarea id="message" name="message" required></textarea>
         </div>
-        <button class="btn btn--dark" type="submit">Send message</button>
+        <button id="send" class="btn btn--dark" type="submit">Send message</button>
       </form>
 
       <aside>
