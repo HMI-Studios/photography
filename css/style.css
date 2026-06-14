@@ -38,6 +38,9 @@
 }
 
 body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 	margin: 0;
 	font-family: var(--sans);
 	font-size: 17px;
@@ -45,6 +48,10 @@ body {
 	color: var(--ink);
 	background: var(--paper);
 	-webkit-font-smoothing: antialiased;
+}
+
+main {
+	flex-grow: 1;
 }
 
 img { display: block; max-width: 100%; height: auto; }
