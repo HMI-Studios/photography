@@ -9,12 +9,13 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="contactForm.js"></script>
 </head>
 <body>
 	<header class="site-header">
-		<a class="brand" href="index.html"><span class="brand__mark">HMI</span> <span class="brand__name">Photography</span></a>
+		<a class="brand" href="/"><span class="brand__mark">HMI</span> <span class="brand__name">Photography</span></a>
 		<nav class="nav" aria-label="Primary">
-			<a href="index.html">Home</a>
+			<a href="/">Home</a>
 			<a href="portfolio.html">Portfolio</a>
 			<a href="contact.html" aria-current="page">Contact</a>
 		</nav>
@@ -30,8 +31,7 @@
 		</header>
 
 		<section class="wrap contact-grid">
-			<!-- The form posts nowhere by default; wire `action` to a handler when ready. -->
-			<form action="#" method="POST">
+			<form id="contact">
 				<div class="field">
 					<label for="name">Name</label>
 					<input type="text" id="name" name="name" autocomplete="name" required>
@@ -48,7 +48,7 @@
 					<label for="message">Message</label>
 					<textarea id="message" name="message" required></textarea>
 				</div>
-				<button class="btn btn--dark" type="submit">Send message</button>
+				<button id="send" class="btn btn--dark" type="submit">Send message</button>
 			</form>
 
 			<aside>
@@ -71,7 +71,7 @@
 	</main>
 
 	<footer>
-		<a class="brand" href="index.html"><span class="brand__mark">HMI</span> <span class="brand__name">Photography</span></a>
+		<a class="brand" href="/"><span class="brand__mark">HMI</span> <span class="brand__name">Photography</span></a>
 		<nav class="socials" aria-label="Social">
 			<a href="https://www.instagram.com/hmiphotostudio/">Instagram</a>
 			<a href="mailto:photography@hmistudios.com">Email</a>
