@@ -1,95 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
-  <meta name="description" content="Commission a shoot, order a print, or just say hello. Get in touch with photographer Jonatan Niemelä.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact — HMI Photography by Jonatan Niemelä</title>
+	<meta name="description" content="Get in touch with photographer Jonatan Niemelä.">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<header class="site-header">
+		<a class="brand" href="index.html"><span class="brand__mark">HMI</span> <span class="brand__name">Photography</span></a>
+		<nav class="nav" aria-label="Primary">
+			<a href="index.html">Home</a>
+			<a href="portfolio.html">Portfolio</a>
+			<a href="contact.html" aria-current="page">Contact</a>
+		</nav>
+	</header>
 
-  <header class="site-header">
-    <div class="wrap site-header__inner">
-      <a class="brand" href="index.html"><span>HMI</span> Photography</a>
-      <nav class="nav" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html" aria-current="page">Contact</a>
-      </nav>
-    </div>
-  </header>
+	<main>
+		<header class="page-head">
+			<hgroup class="wrap">
+				<p>Say hello</p>
+				<h1>Contact</h1>
+			</hgroup>
+			<p>Commissions, print orders, or a coffee to talk light — I read every message and usually reply within two days.</p>
+		</header>
 
-  <main>
-    <section class="page-head">
-      <div class="wrap">
-        <p class="eyebrow">Say hello</p>
-        <h1>Contact</h1>
-        <p>Commissions, print orders, or a coffee to talk light — I read every message
-           and usually reply within two days.</p>
-      </div>
-    </section>
+		<section class="wrap contact-grid">
+			<!-- The form posts nowhere by default; wire `action` to a handler when ready. -->
+			<form action="#" method="POST">
+				<div class="field">
+					<label for="name">Name</label>
+					<input type="text" id="name" name="name" autocomplete="name" required>
+				</div>
+				<div class="field">
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" autocomplete="email" required>
+				</div>
+				<div class="field">
+					<label for="subject">Subject</label>
+					<input type="text" id="subject" name="subject">
+				</div>
+				<div class="field">
+					<label for="message">Message</label>
+					<textarea id="message" name="message" required></textarea>
+				</div>
+				<button class="btn btn--dark" type="submit">Send message</button>
+			</form>
 
-    <section class="wrap contact-grid">
-      <!-- The form posts nowhere by default; wire `action` to a handler when ready. -->
-      <form action="#" method="post" novalidate>
-        <div class="field">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" autocomplete="name" required>
-        </div>
-        <div class="field">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" autocomplete="email" required>
-        </div>
-        <div class="field">
-          <label for="subject">Subject</label>
-          <input type="text" id="subject" name="subject">
-        </div>
-        <div class="field">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" required></textarea>
-        </div>
-        <button class="btn btn--dark" type="submit">Send message</button>
-      </form>
+			<aside>
+				<hgroup>
+					<p>Details</p>
+					<h2>Let's make something.</h2>
+				</hgroup>
+				<dl class="info-list">
+					<dt>Email</dt>
+					<dd><address><a href="mailto:jonatan@niemela.se">jonatan@niemela.se</a></address></dd>
+					<dt>Phone</dt>
+					<dd><address><a href="tel:+12345678900">+1 (234) 567-8900</a></address></dd>
+					<dt>Based in</dt>
+					<dd>Waco, TX</dd>
+					<dt>Social</dt>
+					<dd><a href="#">Instagram</a></dd>
+				</dl>
+			</aside>
+		</section>
+	</main>
 
-      <aside>
-        <p class="eyebrow">Details</p>
-        <h2>Let's make something.</h2>
-        <ul class="info-list">
-          <li>
-            <span class="k">Email</span>
-            <a href="mailto:jonatan@niemela.se">jonatan@niemela.se</a>
-          </li>
-          <li>
-            <span class="k">Based in</span>
-            Stockholm, Sweden — available worldwide
-          </li>
-          <li>
-            <span class="k">Studio hours</span>
-            Mon–Fri, 9:00–17:00 CET
-          </li>
-          <li>
-            <span class="k">Social</span>
-            <a href="#">Instagram</a>
-          </li>
-        </ul>
-      </aside>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap site-footer__inner">
-      <a class="brand" href="index.html"><span>HMI</span> Photography</a>
-      <nav class="socials" aria-label="Social">
-        <a href="#">Instagram</a>
-        <a href="mailto:jonatan@niemela.se">Email</a>
-      </nav>
-      <small>© 2026 Jonatan Niemelä. All rights reserved.</small>
-    </div>
-  </footer>
-
+	<footer>
+		<a class="brand" href="index.html"><span class="brand__mark">HMI</span> <span class="brand__name">Photography</span></a>
+		<nav class="socials" aria-label="Social">
+			<a href="#">Instagram</a>
+			<a href="mailto:jonatan@niemela.se">Email</a>
+		</nav>
+		<small>&copy; 2026 Jonatan Niemelä. All rights reserved.</small>
+	</footer>
 </body>
 </html>
