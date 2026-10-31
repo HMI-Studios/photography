@@ -1,87 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HMI Photography by Jonatan Niemelä</title>
-  <meta name="description" content="HMI Photography is the portfolio of Jonatan Niemelä, a photographer capturing landscapes, portraits, and quiet moments in natural light.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HMI Photography by Jonatan Niemelä</title>
+	<meta name="description" content="HMI Photography is the portfolio of Jonatan Niemelä, a photographer capturing landscapes, portraits, and quiet moments in natural light.">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<header class="site-header">
+		<a class="brand" href="index.html"><span class="brand__mark">HMI</span> <span class="brand__name">Photography</span></a>
+		<nav class="nav" aria-label="Primary">
+			<a href="index.html" aria-current="page">Home</a>
+			<a href="portfolio.html">Portfolio</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+	</header>
 
-  <header class="site-header">
-    <div class="wrap site-header__inner">
-      <a class="brand" href="index.html"><span>HMI</span> Photography</a>
-      <nav class="nav" aria-label="Primary">
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+	<main>
+		<!-- HERO: portfolio images crossfade in the background (CSS only) -->
+		<header class="hero">
+			<div class="hero__slides" aria-hidden="true">
+				<img src="./portfolio/landscapes/bug pic.jpg" alt="">
+				<img src="./portfolio/landscapes/Flowers-1.jpg" alt="">
+				<img src="./portfolio/landscapes/IMG_4974.JPG" alt="">
+				<img src="./portfolio/landscapes/Turkeey Azerbajan-5.jpg" alt="">
+			</div>
 
-  <main>
-    <!-- HERO: portfolio images crossfade in the background (CSS only) -->
-    <section class="hero">
-      <div class="hero__slides" aria-hidden="true">
-        <div style="background-image:url('./portfolio/landscapes/bug pic.jpg')"></div>
-        <div style="background-image:url('./portfolio/landscapes/Flowers-1.jpg')"></div>
-        <div style="background-image:url('./portfolio/landscapes/IMG_4974.JPG')"></div>
-        <div style="background-image:url('./portfolio/landscapes/Turkeey Azerbajan-5.jpg')"></div>
-      </div>
+			<hgroup>
+				<p>Jonatan Niemelä · Photographer</p>
+				<h1>Light, held still.</h1>
+			</hgroup>
+			<p class="hero__lead">
+				Landscapes, portraits, and fleeting moments — photographed in
+				natural light across mountains, cities, and the spaces in between.
+			</p>
+			<div class="hero__actions">
+				<a class="btn btn--light" href="portfolio.html">View Portfolio</a>
+				<a class="btn btn--light" href="contact.html">Get in Touch</a>
+			</div>
 
-      <div class="hero__content">
-        <p class="eyebrow">Jonatan Niemelä · Photographer</p>
-        <h1>Light, held still.</h1>
-        <p class="hero__lead">
-          Landscapes, portraits, and fleeting moments — photographed in
-          natural light across mountains, cities, and the spaces in between.
-        </p>
-        <div class="hero__actions">
-          <a class="btn btn--light" href="portfolio.html">View Portfolio</a>
-          <a class="btn btn--light" href="contact.html">Get in Touch</a>
-        </div>
-      </div>
+			<span class="scroll-cue" aria-hidden="true">Scroll</span>
+		</header>
 
-      <span class="scroll-cue">Scroll</span>
-    </section>
+		<!-- ABOUT SPLIT -->
+		<section class="wrap split">
+			<div>
+				<hgroup>
+					<p>About the work</p>
+					<h2>Quiet frames from loud places.</h2>
+				</hgroup>
+				<p>
+					I work slowly, on foot, mostly at the edges of the day. The aim is
+					never to dramatise a place but to notice it — the way fog settles in
+					a valley, how a stranger pauses at a crossing, the colour the sky
+					turns five minutes after everyone has stopped looking.
+				</p>
+				<p>
+					Every image here is available as a print, and I take on a small
+					number of commissions each year.
+				</p>
+				<a class="btn btn--dark mt-2" href="portfolio.html">Explore the gallery</a>
+			</div>
+			<img class="split__img" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1000&q=80" alt="A portrait taken in soft afternoon light.">
+		</section>
+	</main>
 
-    <!-- ABOUT SPLIT -->
-    <section class="wrap split">
-      <div>
-        <p class="eyebrow">About the work</p>
-        <h2>Quiet frames from loud places.</h2>
-        <p>
-          I work slowly, on foot, mostly at the edges of the day. The aim is
-          never to dramatise a place but to notice it — the way fog settles in
-          a valley, how a stranger pauses at a crossing, the colour the sky
-          turns five minutes after everyone has stopped looking.
-        </p>
-        <p>
-          Every image here is available as a print, and I take on a small
-          number of commissions each year.
-        </p>
-        <a class="btn btn--dark mt-2" href="portfolio.html">Explore the gallery</a>
-      </div>
-      <img class="split__img"
-           src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1000&q=80"
-           alt="A portrait taken in soft afternoon light.">
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap site-footer__inner">
-      <a class="brand" href="index.html"><span>HMI</span> Photography</a>
-      <nav class="socials" aria-label="Social">
-        <a href="#">Instagram</a>
-        <a href="mailto:jonatan@niemela.se">Email</a>
-      </nav>
-      <small>© 2026 Jonatan Niemelä. All rights reserved.</small>
-    </div>
-  </footer>
-
+	<footer>
+		<a class="brand" href="index.html"><span class="brand__mark">HMI</span> <span class="brand__name">Photography</span></a>
+		<nav class="socials" aria-label="Social">
+			<a href="#">Instagram</a>
+			<a href="mailto:jonatan@niemela.se">Email</a>
+		</nav>
+		<small>&copy; 2026 Jonatan Niemelä. All rights reserved.</small>
+	</footer>
 </body>
 </html>
